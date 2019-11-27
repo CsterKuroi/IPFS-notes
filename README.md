@@ -9,4 +9,26 @@
   * Merkle-DAG 有向无环图
   * DHT 分布式哈希表
 
+* 安装
+  * prebuilt package https://dist.ipfs.io/#go-ipfs
+  * IPFS-Desktop https://github.com/ipfs-shipyard/ipfs-desktop
+  * Building from source https://docs.ipfs.io/guides/guides/install/#building-from-source
+  
+* 初始化
+```
+> ipfs init
+initializing ipfs node at /Users/jbenet/.go-ipfs
+generating 2048-bit RSA keypair...done
+peer identity: Qmcpo2iLBikrdf1d6QU6vXuNb6P7hwrbNPW9kLAH8eG67z
+to get started, enter:
+
+  ipfs cat /ipfs/QmYwAPJzv5CZsnA625s3Xf2nemtYgPpHdWEz79ojWnPbdG/readme
+```
+```
+ipfs init --profile server
+```
+* 配置 https://github.com/ipfs/go-ipfs/blob/v0.4.15/docs/config.md
+
+* WEBUI http://localhost:5001/webui
+
 ## [references](./reference.md)
