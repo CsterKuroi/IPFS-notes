@@ -1,3 +1,4 @@
+```
 [root@vultr ~]# ipfs commands
 ipfs
 ipfs add
@@ -152,3 +153,4 @@ ipfs urlstore
 ipfs urlstore add
 ipfs version
 ipfs version deps
+```
