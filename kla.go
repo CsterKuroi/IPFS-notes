@@ -8,11 +8,13 @@ import (
 
 func main() {
 	// To create an encoder with 10 data shards (where your data goes) and 3 parity shards (calculated)
-	enc, err := reedsolomon.New(10, 3)
+	//enc, err := reedsolomon.New(10, 3)
+	enc, err := reedsolomon.New(10, 3,reedsolomon.WithCauchyMatrix())
 	if err != nil {
 		panic(err)
 	}
-
+	//fmt.Print(enc)
+	
 	// Data
 	data := make([][]byte, 13)
 	// Create all shards, size them at 50000 each
