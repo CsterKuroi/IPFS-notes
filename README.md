@@ -32,4 +32,6 @@ ipfs init --profile server
 * WEBUI http://localhost:5001/webui
 
 * 私有网络 https://xiaozhuanlan.com/topic/2378914056
+
 ## [references](./references.md)
+## [RS 测试](./kla.go)
