@@ -1,5 +1,7 @@
 # IPFS-notes
 
+IPFS（InterPlanetary File System）是一个基于内容寻址的分布式的新型超媒体传输协议
+
 ## Contents
 1. [overview](./overview.md)
 2. [references](./references.md)
