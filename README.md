@@ -11,3 +11,4 @@ IPFS（InterPlanetary File System）是一个基于内容寻址的分布式的�
 6. [mDNS](./mDNS.md)
 7. [Kad](./Kad.md)
 8. [go-ipfs-api.go](./go-ipfs-api.go)
+9. [js-ipfs-http-client.js](./js-ipfs-http-client.js)
