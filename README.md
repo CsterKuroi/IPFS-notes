@@ -9,3 +9,4 @@ IPFS（InterPlanetary File System）是一个基于内容寻址的分布式的�
 4. [commands](./commands.md)
 5. [webui](./webui.md)
 6. [mDNS](./mDNS.md)
+7. [Kad](./Kad.md)
