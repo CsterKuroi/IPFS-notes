@@ -23,3 +23,17 @@ IPFS DHT的数据存储是根据数据的大小进行的：??? 白皮书宣称�
 小于1KB的数据直接存储到DHT上面
 大于1KB的数据在DHT中存储的是节点ID
 ```
+
+```
+3.3 Routing
+IPFS nodes require a routing system that can find (a)
+other peers’ network addresses and (b) peers who can serve
+particular objects. IPFS achieves this using a DSHT based
+on S/Kademlia and Coral, using the properties discussed in
+2.1. The size of objects and use patterns of IPFS are similar
+to Coral [5] and Mainline [16], so the IPFS DHT makes a
+distinction for values stored based on their size. Small values
+(equal to or less than 1KB) are stored directly on the DHT.
+For values larger, the DHT stores references, which are the
+NodeIds of peers who can serve the block.
+```
