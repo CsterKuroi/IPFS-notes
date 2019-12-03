@@ -32,3 +32,5 @@ ipfs init --profile server
 * WEBUI http://localhost:5001/webui
 
 * 私有网络 https://xiaozhuanlan.com/topic/2378914056
+
+* github.com\ipfs\go-ipfs\core\node\libp2p\pnet.go swarm.key
