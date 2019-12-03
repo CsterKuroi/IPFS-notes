@@ -24,3 +24,11 @@ ipfs.add(Buffer.from(toStore), function (err, res) {
         }
     })
 });
+
+ipfs.block.get(hash, function (err, res) {
+    if (err || !res) {
+        return console.error('ipfs get block error', err, res)
+    }
+
+    console.log(res.data.toString())
+});
