@@ -15,3 +15,9 @@ ipfs swarm connect /ip4/xxxxxxxxxx/tcp/4001/ipfs/QmabYFoBnCwUYHCx5wU75wtQ57YxqNd
 
 ipfs daemon
 ```
+
+```
+ipfs files cp /ipfs/QmeDqoRmdHa4DAy4N9KZezuc7XJXp1oeaGcPBeEtfFPDht /nohup.out
+ipfs files read /nohup.out
+```
+
