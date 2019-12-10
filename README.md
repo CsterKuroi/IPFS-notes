@@ -15,3 +15,4 @@ IPFS（InterPlanetary File System）是一个基于内容寻址的分布式的�
 10. [CORS](./bundle-browserify)
 12. [Android APP](./android.md)
 13. [useful cmd](./cmd.md)
+14. [daemon](./daemon.md)
