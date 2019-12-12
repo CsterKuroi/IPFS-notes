@@ -20,3 +20,4 @@ IPFS（InterPlanetary File System）是一个基于内容寻址的分布式的�
 15. [swarmkey](./swarmkey.md)
 16. [codebase](./codebase.md)
 17. [add](./add.md)
+18. [newblock](./newblock.md)
