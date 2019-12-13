@@ -3,7 +3,7 @@
 * https://github.com/jbenet/ipfs-senc
 
 ```
-* ipfs-senc share <path-to-file-or-directory>
+* ipfs-senc -w share <path-to-file-or-directory>
 ```
 
 ```
