@@ -11,7 +11,7 @@ BundleEncryptAndPut
   Put -> Add
 ```
 
-* ipfs-senc download --key <secret-key> <ipfs-link> [<local-destination-dir>]
+* ipfs-senc --key <secret-key> download <ipfs-link> [<local-destination-dir>]
 
 ```
 GetDecryptAndUnbundle
