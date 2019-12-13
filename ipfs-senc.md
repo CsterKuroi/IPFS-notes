@@ -2,7 +2,9 @@
 
 * https://github.com/jbenet/ipfs-senc
 
+```
 * ipfs-senc share <path-to-file-or-directory>
+```
 
 ```
 BundleEncryptAndPut
@@ -11,7 +13,9 @@ BundleEncryptAndPut
   Put -> Add
 ```
 
+```
 * ipfs-senc --key <secret-key> download <ipfs-link> [<local-destination-dir>]
+```
 
 ```
 GetDecryptAndUnbundle
