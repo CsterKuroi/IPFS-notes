@@ -22,3 +22,4 @@ IPFS（InterPlanetary File System）是一个基于内容寻址的分布式的�
 17. [add](./add.md)
 18. [newblock](./newblock.md)
 19. [ipfs-senc](./ipfs-senc.md)
+20. [object size](./size.md)
