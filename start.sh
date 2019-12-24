@@ -39,6 +39,7 @@ function setupIpfsNetwork {
     do
         bootIpfsPeer ${i}
     done
+    echo "Wait 15 seconds to initialize the container ..."
     sleep 15
     for (( i=0; i<$1; i++ ))
     do
