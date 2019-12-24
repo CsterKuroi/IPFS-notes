@@ -21,3 +21,7 @@ ipfs files cp /ipfs/QmeDqoRmdHa4DAy4N9KZezuc7XJXp1oeaGcPBeEtfFPDht /nohup.out
 ipfs files read /nohup.out
 ```
 
+显示所有数据块hash
+```
+ipfs refs local|wc -l
+```
