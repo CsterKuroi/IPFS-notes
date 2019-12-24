@@ -12,25 +12,37 @@ function bootIpfsPeer {
     rm -rf $ipfs_data
     mkdir -p $ipfs_data
 
-    cp ./data/swarm.key $ipfs_data
+    cp swarm.key $ipfs_data
 
     echo "Creating ${hostName} ..."
     docker run -d --name ${hostName} \
         -v ${ipfs_staging}:/export \
         -v ${ipfs_data}:/data/ipfs \
-        -p $((4001 + index)):4001 \
-        -p $((5001 + index)):5001 \
-        -p 127.0.0.1:$((8080 + index)):8080 \
+        -p $((14001 + index)):4001 \
+        -p $((15001 + index)):5001 \
+        -p 127.0.0.1:$((18080 + index)):8080 \
         ipfs/go-ipfs:latest
+}
+
+function initIpfsPeer {
+    index=$1
+    hostName=ipfs_host_${index}
 
     echo "Remove bootstrap for ${hostName} ..."
     docker exec ${hostName} ipfs bootstrap rm --all
+    docker exec ${hostName} ipfs bootstrap add  /ip4/39.106.216.189/tcp/4001/ipfs/QmabYFoBnCwUYHCx5wU75wtQ57YxqNdHRbLwpX8rVA2Bzo
+    docker exec ${hostName} ipfs swarm connect /ip4/39.106.216.189/tcp/4001/ipfs/QmabYFoBnCwUYHCx5wU75wtQ57YxqNdHRbLwpX8rVA2Bzo
 }
 
 function setupIpfsNetwork {
     for (( i=0; i<$1; i++ ))
     do
         bootIpfsPeer ${i}
+    done
+    sleep 15
+    for (( i=0; i<$1; i++ ))
+    do
+        initIpfsPeer ${i}
     done
 }
 
