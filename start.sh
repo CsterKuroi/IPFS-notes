@@ -20,7 +20,7 @@ function bootIpfsPeer {
         -v ${ipfs_data}:/data/ipfs \
         -p $((14001 + index)):4001 \
         -p $((15001 + index)):5001 \
-        -p 127.0.0.1:$((18080 + index)):8080 \
+        -p $((18080 + index)):8080 \
         ipfs/go-ipfs:latest
 }
 
