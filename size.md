@@ -1,4 +1,22 @@
 ```
+2M 256KB/Block
+
+ipfs object stat QmV92xDnjcqkztguYssegFpFV124tW9u2EmuwgFCQRUsqj
+NumLinks:       8
+BlockSize:      393
+LinksSize:      354
+DataSize:       39
+CumulativeSize: 2097657
+
+Numlinks*14+BlockSize+FileSize=CumulativeSize
+BlockSize=LinksSizeDataSize
+```
+
+
+
+
+
+```
 $ ipfs object links  /ipfs/QmdHY9TnXaXez2bSsQqanm2WaAineyiaFydwqqkEk6kyzs
 QmbWqxBEKC3P8tqsKc98xmWNzrzDtRLMiMPL8wBuTGsMnR 119776 guardian.jpg
 
