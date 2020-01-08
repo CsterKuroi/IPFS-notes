@@ -25,3 +25,4 @@ IPFS（InterPlanetary File System）是一个基于内容寻址的分布式的�
 20. [object size](./size.md)
 21. [docker](./start.sh)
 22. [dag-link数目大小限制，为什么是最多174个](./DefaultLinksPerBlock.md)
+23. [docker IPFS bash](./dipfs.sh)
