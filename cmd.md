@@ -24,4 +24,6 @@ ipfs files read /nohup.out
 显示所有数据块hash
 ```
 ipfs refs local|wc -l
+
+ipfs refs local | find /C /V ""
 ```
