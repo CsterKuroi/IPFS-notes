@@ -27,3 +27,15 @@ ipfs refs local|wc -l
 
 ipfs refs local | find /C /V ""
 ```
+
+
+统计数据
+```
+ipfs stats bitswap
+ipfs stats bw
+ipfs repo stat
+
+ipfs id
+ipfs swarm peers
+ipfs diag sys
+```
